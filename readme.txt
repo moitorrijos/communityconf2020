@@ -14,7 +14,7 @@ Tema personalizado de la CommunityConf 2020 Panamá
 
 == Instalación ==
 
-1. Bajar el tema y comprimirlo en formato .zip.
+1. Baja el tema y comprimirlo en formato .zip.
 1. En el panel de administración ir a Apariencia > Temas y click en Añadir Nuevo.
 1. Click al botón Subir tema y elegir el archivo .zip del tema y dar click en Instalar Ahora.
 1. Click en Activar Tema.
