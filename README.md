@@ -6,12 +6,14 @@ CommunityConf2020
 Este es el tema personalizado para la CommunityConf 2020, Ciudad de Panamá.
 Está basado en el tema _S de Automattic.
 
+![Screenshot de CommunityConf2020](./screenshot.png)
+
 Instalación
 ---------------
 
 ### Requirements
 
-`_s` requires the following dependencies:
+`_s` Requiere de las siguientes dependencias:
 
 - [Node.js](https://nodejs.org/)
 - [Composer](https://getcomposer.org/)
