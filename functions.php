@@ -94,8 +94,8 @@ if ( ! function_exists( 'communityconf2020_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
-				'width'       => 250,
+				'height'      => 360,
+				'width'       => 60,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
@@ -140,7 +140,8 @@ add_action( 'widgets_init', 'communityconf2020_widgets_init' );
  * Enqueue scripts and styles.
  */
 function communityconf2020_scripts() {
-	wp_enqueue_style( 'communityconf2020-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'communityconf2020-fonts', "https://fonts.googleapis.com/css2?family=Montserrat&family=Saira:wght@400;600;800&display=swap", array(), '001', 'all' );
+	wp_enqueue_style( 'communityconf2020-style', get_stylesheet_uri(), array(), '001' );
 	wp_style_add_data( 'communityconf2020-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'communityconf2020-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -183,4 +184,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+if( ! class_exists('ACF') ) {
+	require get_template_directory() . '/inc/acf.php';
 }

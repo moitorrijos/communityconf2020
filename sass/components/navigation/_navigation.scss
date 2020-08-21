@@ -1,6 +1,8 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	font-family: $font__header;
+	font-weight: 600;
+	text-transform: uppercase;
 
 	ul {
 		display: none;
@@ -60,6 +62,8 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__background-screen;
+		padding: 1rem 2rem;
 	}
 
 	.current_page_item > a,
@@ -83,6 +87,9 @@
 
 	.main-navigation ul {
 		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 

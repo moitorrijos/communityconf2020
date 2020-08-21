@@ -1,0 +1,15 @@
+header.site-header {
+  color: $color__background-screen;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  .site-branding {
+    
+    a.custom-logo-link {
+      max-width: 400px;
+    }
+  }
+}
