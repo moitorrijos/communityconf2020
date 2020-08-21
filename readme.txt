@@ -8,6 +8,8 @@ License URI: LICENSE
 
 Un tema Personalizad CommunityConf2020 basado en Underscores.me
 
+![Screenshot de CommunityConf2020](./screenshot.png)
+
 == Descripción ==
 
 Tema personalizado de la CommunityConf 2020 Panamá
