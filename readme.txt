@@ -1,39 +1,38 @@
 === CommunityConf2020 ===
-
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-Requires at least: 4.5
-Tested up to: 5.4
-Requires PHP: 5.6
+Versión Mínima de WP: 4.5
+Probado hasta: 5.5 (Versión recomendada)
+Require PHP: 5.6+
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called CommunityConf2020.
+Un tema Personalizad CommunityConf2020 basado en Underscores.me
 
-== Description ==
+== Descripción ==
 
 Tema personalizado de la CommunityConf 2020 Panamá
 
-== Installation ==
+== Instalación ==
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+1. Bajar el tema y comprimirlo en formato .zip.
+1. En el panel de administración ir a Apariencia > Temas y click en Añadir Nuevo.
+1. Click al botón Subir tema y elegir el archivo .zip del tema y dar click en Instalar Ahora.
+1. Click en Activar Tema.
 
-== Frequently Asked Questions ==
+== Preguntas Frecuentes ==
 
-= Does this theme support any plugins? =
+= Puedo usar cualquier plugin? =
 
-CommunityConf2020 includes support for WooCommerce and for Infinite Scroll in Jetpack.
+CommunityConf2020 incluye soporte para WooCommerce y Infinite Scroll in Jetpack.
+También se ha probado con Advanced Custom Fields Pro y Contact Form 7.
+Cualquier problema con plugins especiales favor agregarlo en la lengüeta de "Problemas" en Github.
 
 == Changelog ==
 
 = 1.0 - May 12 2015 =
 * Initial release
 
-== Credits ==
+== Crédito ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Basado en Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
