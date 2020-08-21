@@ -29,9 +29,9 @@ Clona el repo y cambiale el nombre. Luego correo npm install.
 1. Click al botón Subir tema y elegir el archivo .zip del tema y dar click en Instalar Ahora.
 1. Click en Activar Tema.
 
-### Setup
+### Configuración
 
-Para usar las herramientas necesitas instalar con composer y luego npm:
+Para usar las herramientas necesitas instalar las dependencias con composer y npm:
 
 ```sh
 $ composer install
