@@ -1,0 +1,29 @@
+body {
+	background-color: #071e62;
+	color: #f1f1f1;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: Saira, "Helvetica Neue", sans-serif;
+	line-height: 1.1;
+}
+
+/* Main column width */
+.wp-block {
+	max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+	max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+	max-width: none;
+}

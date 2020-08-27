@@ -1,15 +1,36 @@
 header.site-header {
-  color: $color__background-screen;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  background-color: lighten($color__link-hover, 10%);
   
+  .branding-navigation {
+    color: $color__background-screen;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .site-branding {
-    
-    a.custom-logo-link {
-      max-width: 400px;
+    width: 250px;
+    height: auto;
+
+    & > * {
+      width: 100%;
+      height: auto;
     }
   }
+  
+}
+
+body.home header.site-header {
+  background-color: transparentize($color__link-hover, .45);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+body.home.admin-bar .site-header {
+  top: 2rem;
 }

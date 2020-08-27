@@ -23,3 +23,19 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.comunidad {
+	display: grid;
+	grid-template-columns: auto 300px;
+	column-gap: 40px;
+	row-gap: 40px;
+	margin-bottom: 40px;
+
+	.comunidad-logo {
+		max-width: 300px;
+		height: auto;
+		justify-self: end;
+	}
+}
+
+@import 'footer';

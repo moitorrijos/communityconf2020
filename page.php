@@ -34,5 +34,11 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
+if ( is_home() && ! is_front_page() ) {
+
+	get_sidebar();
+
+}
+
 get_footer();

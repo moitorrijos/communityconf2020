@@ -20,7 +20,17 @@
 
 	<div class="entry-content">
 		<?php
+
 		the_content();
+
+		/**
+		 * Despliega el Repetidor para la página de Comunidades
+		 */
+		if ( get_the_ID() === 97 ) {
+
+			get_template_part( 'template-parts/content', 'comunidades' );
+
+		} 
 
 		wp_link_pages(
 			array(

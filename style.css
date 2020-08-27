@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 Theme Name: CommunityConf2020
 Theme URI: http://underscores.me/
@@ -22,6 +23,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -49,14 +51,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
+
 /* Normalize
 --------------------------------------------- */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
 	 ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -68,6 +75,7 @@ html {
 
 /* Sections
 	 ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -93,6 +101,7 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -114,6 +123,7 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -179,6 +189,7 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -188,6 +199,7 @@ img {
 
 /* Forms
 	 ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -333,6 +345,7 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -349,6 +362,7 @@ summary {
 
 /* Misc
 	 ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
@@ -365,6 +379,7 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
+
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -380,6 +395,7 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
+
 /* Typography
 --------------------------------------------- */
 body,
@@ -389,7 +405,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -400,7 +416,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Saira", "Helvetica Neue", sans-serif;
+	font-family: Saira, "Helvetica Neue", sans-serif;
 	font-weight: 800;
 }
 
@@ -489,6 +505,16 @@ big {
 --------------------------------------------- */
 body {
 	background: #fff;
+	font-size: 16px;
+}
+
+body p {
+	max-width: 70ch;
+}
+
+.wp-block-columns.alignwide {
+	max-width: 1200px;
+	margin: 2rem auto;
 }
 
 hr {
@@ -556,15 +582,18 @@ a:visited {
 	color: #800080;
 }
 
-a:hover, a:focus, a:active {
-	color: #191970;
+a:hover,
+a:focus,
+a:active {
+	color: #071e62;
 }
 
 a:focus {
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	outline: 0;
 }
 
@@ -590,7 +619,8 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -652,16 +682,20 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
 	display: block;
-	font-family: "Saira", "Helvetica Neue", sans-serif;
+	font-family: Saira, "Helvetica Neue", sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
+	font-size: 0.77rem;
+	letter-spacing: 1px;
 }
 
 .main-navigation ul {
@@ -673,7 +707,6 @@ textarea {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
 	position: absolute;
 	top: 100%;
 	left: -999em;
@@ -704,11 +737,34 @@ textarea {
 	position: relative;
 }
 
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+	background-color: #071e62;
+}
+
+.main-navigation li.boton-registro a {
+	background-color: #fff;
+	color: #071e62;
+}
+
+.main-navigation li.boton-registro a:hover {
+	background-color: #e6e6e6;
+	color: #071e62;
+}
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;
 	color: #f1f1f1;
-	padding: 1rem 2rem;
+	padding: 2rem 2rem;
+	transition: all 0.25s ease-in-out;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+	background-color: #071e62;
 }
 
 /* Small menu. */
@@ -718,9 +774,11 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
+
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: flex;
 		flex-flow: row wrap;
@@ -729,8 +787,10 @@ textarea {
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -757,16 +817,39 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 header.site-header {
+	background-color: #0a2d92;
+}
+
+header.site-header .branding-navigation {
 	color: #f1f1f1;
-	padding: 1rem 2rem;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-header.site-header .site-branding a.custom-logo-link {
-	max-width: 400px;
+header.site-header .site-branding {
+	width: 250px;
+	height: auto;
+}
+
+header.site-header .site-branding > * {
+	width: 100%;
+	height: auto;
+}
+
+body.home header.site-header {
+	background-color: rgba(7, 30, 98, 0.55);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+body.home.admin-bar .site-header {
+	top: 2rem;
 }
 
 .sticky {
@@ -791,6 +874,32 @@ header.site-header .site-branding a.custom-logo-link {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.comunidad {
+	display: grid;
+	grid-template-columns: auto 300px;
+	column-gap: 40px;
+	row-gap: 40px;
+	margin-bottom: 40px;
+}
+
+.comunidad .comunidad-logo {
+	max-width: 300px;
+	height: auto;
+	justify-self: end;
+}
+
+footer.site-footer {
+	background-color: #071e62;
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 1rem 0;
+	color: #8ba6f7;
+}
+
+footer.site-footer a {
+	color: #a3b8f8;
 }
 
 /* Comments
@@ -827,6 +936,24 @@ header.site-header .site-branding a.custom-logo-link {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
+}
+
+.entry-content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main.site-main {
+	padding: 4rem 0;
+}
+
+body.home .entry-content {
+	margin: 0;
+	max-width: none;
+}
+
+body.home main.site-main {
+	padding: 0;
 }
 
 /* Captions
@@ -903,8 +1030,10 @@ header.site-header .site-branding a.custom-logo-link {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
+
 /* Jetpack infinite scroll
 --------------------------------------------- */
+
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -919,8 +1048,10 @@ header.site-header .site-branding a.custom-logo-link {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
+
 /* Accessibility
 --------------------------------------------- */
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -963,16 +1094,20 @@ header.site-header .site-branding a.custom-logo-link {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
+
 	/*rtl:ignore*/
 	float: left;
+
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
+
 	/*rtl:ignore*/
 	float: right;
+
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -986,4 +1121,55 @@ header.site-header .site-branding a.custom-logo-link {
 	margin-bottom: 1.5em;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Blocks
+--------------------------------------------- */
+.comm-conf-home-hero {
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.comm-conf-home-hero .inner-container-comm-conf-home-hero {
+	max-width: 1200px;
+	margin: 3rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+}
+
+@media (max-width: 768px) {
+
+	.comm-conf-home-hero .inner-container-comm-conf-home-hero {
+		grid-template-columns: 1fr;
+	}
+}
+
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text h1,
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text h2,
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text h3,
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text p {
+	color: #fff;
+}
+
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text h1 {
+	font-weight: 600;
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+	line-height: 1.1;
+}
+
+.home-hero-comm-conf-text.home-hero-comm-conf-text.home-hero-comm-conf-text a.hero-button {
+	display: inline-block;
+	background-color: #fff;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+}

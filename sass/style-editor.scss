@@ -1,0 +1,29 @@
+@import 'abstracts/variables/colors';
+@import 'abstracts/variables/typography';
+
+body {
+  background-color: $color__link-hover;
+  color: $color__background-screen;
+  font-family: $font__main;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font__header;
+  line-height: 1.1;
+}
+
+/* Main column width */
+.wp-block {
+  max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+

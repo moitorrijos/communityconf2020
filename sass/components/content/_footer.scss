@@ -1,0 +1,11 @@
+footer.site-footer {
+  background-color: $color__link-hover;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  color: lighten($color__link-hover, 55%);
+
+  a {
+    color: lighten($color__link-hover, 60%);
+  }
+}

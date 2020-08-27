@@ -11,3 +11,22 @@
 .custom-logo-link {
 	display: inline-block;
 }
+
+.entry-content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main.site-main {
+	padding: 4rem 0; 
+}
+
+body.home {
+	.entry-content {
+		margin: 0;
+		max-width: none;
+	}
+	main.site-main {
+		padding: 0;
+	}
+}
