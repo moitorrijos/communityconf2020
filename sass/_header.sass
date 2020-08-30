@@ -25,6 +25,7 @@
   font-weight: 600
   text-transform: uppercase
   letter-spacing: 1px
+  transition: all 0.25s ease-in-out
 
   ul
     display: flex
@@ -46,14 +47,16 @@
           font-size: 0.8rem
 
   @media (max-width: $tablet-size)
+    opacity: 0
+    pointer-events: none
     position: absolute
     top: 100%
     right: 0
     left: 0
-    display: none
 
     &.show
-      display: block
+      opacity: 1
+      pointer-events: auto
 
     ul
       display: block
@@ -98,8 +101,19 @@ button.mobile-menu
       border-radius: 4px
       background-color: white
       position: relative
-      transform-origin: 4px 0
       transition: all 0.25s ease-in-out
+      transform-origin: 0 0
+
+    &.close
+      span:first-child
+        transform: rotate(45deg) translateX(1px)
+
+      span:nth-child(2)
+        opacity: 0
+
+      span:last-child
+        transform: rotate(-45deg) translateX(-2px)
+
 
 body.home header.site-header
   position: absolute
