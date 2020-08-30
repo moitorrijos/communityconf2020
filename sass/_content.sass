@@ -2,6 +2,27 @@
   margin: 1rem 0
   text-align: center
 
+.main-content
+  @extend %inner-container
+  padding-top: 4rem
+  padding-bottom: 4rem
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+  main.site-main
+    width: 70%
+
+    @media (max-width: $tablet-size)
+      width: 100%
+
+  aside.widget-area
+    width: 25%
+
+    @media (max-width: $tablet-size)
+      width: 100%
+      max-width: 400px
+
 figure
   margin: 2rem 0
 
@@ -31,4 +52,3 @@ figure.comunidad-logo
 
     td
       padding: 1rem 2rem
-      

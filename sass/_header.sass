@@ -15,7 +15,7 @@
   width: 320px
   padding: 0 2rem
 
-  @media (max-width: 1000px)
+  @media (max-width: $tablet-size)
     max-width: 400px
     width: 75%
     padding: 2rem
@@ -45,7 +45,7 @@
           padding: 2rem 1rem
           font-size: 0.8rem
 
-  @media (max-width: 1000px)
+  @media (max-width: $tablet-size)
     position: absolute
     top: 100%
     right: 0
@@ -79,8 +79,7 @@
 button.mobile-menu
   display: none
 
-  @media (max-width: 1000px)
-    display: block
+  @media (max-width: $tablet-size)
     margin-right: 2rem
     background-color: transparent
     border: 0
@@ -94,10 +93,13 @@ button.mobile-menu
 
     span
       display: block
-      background-color: $light-gray
-      width: 100%
-      height: 4px
-      border-radius: 10px
+      width: calc(36px - 8px)
+      height: 3px
+      border-radius: 4px
+      background-color: white
+      position: relative
+      transform-origin: 4px 0
+      transition: all 0.25s ease-in-out
 
 body.home header.site-header
   position: absolute

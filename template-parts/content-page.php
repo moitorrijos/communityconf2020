@@ -10,10 +10,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<?php if ( !is_home() && !is_front_page() ) : ?>
+
 		<header class="entry-header">
+
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
 		</header><!-- .entry-header -->
+
 	<?php endif; ?>
 
 	<?php communityconf2020_post_thumbnail(); ?>
@@ -25,8 +30,12 @@
 		/**
 		 * Despliega el Repetidor para la página de Comunidades
 		 */
-			if ( get_the_ID() === 97 ) {
+			if ( get_the_ID() === 69 ) {
 
+				get_template_part( 'template-parts/content', 'agenda' );
+				
+			} elseif ( get_the_ID() === 97 ) {
+				
 				get_template_part( 'template-parts/content', 'comunidades' );
 
 			}
