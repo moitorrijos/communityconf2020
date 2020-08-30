@@ -13,12 +13,19 @@
  */
 
 get_header();
+
+if ( !is_home() && !is_front_page() ) :
+
 ?>
-
+	<div class="main-content">
 	<main id="primary" class="site-main">
-
+		
 		<?php
+
+		endif;
+
 		while ( have_posts() ) :
+
 			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
@@ -31,14 +38,26 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+	<?php if ( !is_home() && !is_front_page() ) :	?>
 	</main><!-- #main -->
+	<?php endif; ?>
+
 
 <?php
-
-if ( is_home() && ! is_front_page() ) {
+if ( !is_home() && !is_front_page() ) {
 
 	get_sidebar();
 
 }
+
+if ( !is_home() && !is_front_page() ) :
+
+?>
+
+</div>
+
+<?php 
+
+endif;
 
 get_footer();

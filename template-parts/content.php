@@ -31,8 +31,7 @@
 
 	<?php communityconf2020_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
+	<?php
 		the_content(
 			sprintf(
 				wp_kses(
@@ -54,8 +53,7 @@
 				'after'  => '</div>',
 			)
 		);
-		?>
-	</div><!-- .entry-content -->
+	?>
 
 	<footer class="entry-footer">
 		<?php communityconf2020_entry_footer(); ?>

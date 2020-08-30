@@ -17,15 +17,22 @@ $home_hero_button_link = get_field('home_hero_button_link');
 
 ?>
 
-<div class="comm-conf-home-hero" style="background-image: url(<?php echo $home_hero_image['url']; ?>)">
-  <div class="inner-container-comm-conf-home-hero">
-    <div class="home-hero-comm-conf-text">
+<div class="comconf-home-hero" style="background-image: url(<?php echo $home_hero_image['url']; ?>)">
+  <div class="comconf-home-hero-inner-container">
+    <div class="comconf-home-hero-text">
       <h1><?php echo $home_hero_title; ?></h1>
       <p><?php echo $home_hero_description; ?></p>
       <a href="<?php echo $home_hero_button_link; ?>" class="hero-button">
         <?php echo $home_hero_button_text; ?>
       </a>
-      <InnerBlocks  />
+      <div class="patrocinador">
+        <p>
+          Patrocinado por <a href="https://liveskill.io/">LiveSkill</a>
+        </p>
+        <figure>
+          <?php get_template_part('template-parts/liveskill_logo'); ?>
+        </figure>
+      </div>
     </div>
   </div>
 </div>

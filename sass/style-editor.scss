@@ -1,14 +1,14 @@
-@import 'abstracts/variables/colors';
-@import 'abstracts/variables/typography';
+@import 'colors';
+@import 'fonts';
 
 body {
-  background-color: $color__link-hover;
-  color: $color__background-screen;
-  font-family: $font__main;
+  background-color: $light-gray;
+  color: $dark-gray;
+  font-family: $body-font-family;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $font__header;
+  font-family: $header-font-family;
   line-height: 1.1;
 }
 

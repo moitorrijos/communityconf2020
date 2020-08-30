@@ -1,0 +1,47 @@
+footer.site-footer
+  background-color: darken($primary-color, 7%)
+  border-top: 1rem solid $terciary-color
+
+  .site-info
+    padding: 2rem 3rem
+    background-color: darken($primary-color, 12%)
+    color: lighten($primary-color, 47%)
+    font-size: 0.88rem
+    text-align: center
+
+    a
+      color: lighten($primary-color, 52%)
+      text-decoration: none
+
+      &:hover
+        color: lighten($primary-color, 57%)
+
+.footer-widget-area
+  @extend %inner-container
+  padding: 4rem 2rem
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  justify-content: space-between
+  column-gap: 60px
+  row-gap: 40px
+
+  img, svg
+    width: 100%
+
+  h2
+    color: $light-gray
+    font-size: 1.4rem
+
+    
+  a
+    display: block
+    padding: 0.75rem 0
+    color: $light-gray
+    text-decoration: none
+    transition: all 0.25s ease-in-out
+
+    &:hover
+      transform: translateX(10px)
+
+.footer-logo
+  padding: 2rem 0

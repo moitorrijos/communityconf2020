@@ -1,29 +1,20 @@
 body {
-	background-color: #071e62;
-	color: #f1f1f1;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
-}
+  background-color: #F2F2F2;
+  color: #636363;
+  font-family: Montserrat, sans-serif; }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: Saira, "Helvetica Neue", sans-serif;
-	line-height: 1.1;
-}
+h1, h2, h3, h4, h5 {
+  font-family: Saira, sans-serif;
+  line-height: 1.1; }
 
 /* Main column width */
 .wp-block {
-	max-width: 720px;
-}
+  max-width: 720px; }
 
 /* Width of "wide" blocks */
-.wp-block[data-align="wide"] {
-	max-width: 1080px;
-}
+.wp-block[data-align='wide'] {
+  max-width: 1080px; }
 
 /* Width of "full-wide" blocks */
-.wp-block[data-align="full"] {
-	max-width: none;
-}
+.wp-block[data-align='full'] {
+  max-width: none; }
