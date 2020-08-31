@@ -33,6 +33,10 @@
 			if ( get_the_ID() === 69 ) {
 
 				get_template_part( 'template-parts/content', 'agenda' );
+
+			} elseif ( get_the_ID() === 73 ) {
+
+				get_template_part(  'template-parts/content', 'speakers' );
 				
 			} elseif ( get_the_ID() === 97 ) {
 				

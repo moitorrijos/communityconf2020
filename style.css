@@ -343,6 +343,66 @@ figure.comunidad-logo {
 	padding: 1rem 2rem;
 }
 
+.ponentes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 280px);
+	column-gap: 40px;
+	row-gap: 40px;
+}
+
+.ponentes .ponente {
+	margin: 2rem 0 1rem;
+	display: grid;
+	grid-template-rows: 130px 1fr;
+}
+
+.ponentes .avatars-ponentes {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes {
+	width: 45%;
+	position: relative;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes:last-child {
+	z-index: -1;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes .avatar-nombre {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes img.avatar {
+	display: block;
+	border-radius: 50%;
+	border: 4px solid #F2F2F2;
+	box-shadow: 0 4px 8px rgba(99, 99, 99, 0.25);
+	transform: scale(1.5);
+	margin-bottom: 2rem;
+	width: 100px;
+	height: 100px;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes p {
+	font-size: 0.9rem;
+	line-height: 1.1;
+	font-weight: 600;
+	padding: 0 10px;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes .redes {
+	padding: 0 4px;
+}
+
+.ponentes .avatars-ponentes .avatar-nombre-redes .redes img {
+	margin-right: 2px;
+}
+
 .lenguetas {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
