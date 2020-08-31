@@ -36,7 +36,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Tema personalizado %1$s creado por %2$s.', 'communityconf2020' ), '<a href="https://github.com/moitorrijos/communityconf2020.git">CommunityConf2020</a>', '<a href="https://moitorrijos.com">Juan Moises Torrijos</a>' );
+				printf( esc_html__( 'Tema personalizado %1$s creado por %2$s en la Ciudad de Panamá %3$s.', 'communityconf2020' ), '<a href="https://github.com/moitorrijos/communityconf2020.git">CommunityConf2020</a>', '<a href="https://moitorrijos.com">Juan Moises Torrijos</a>', '<span role="img" aria-label="Panama Flag">🇵🇦</span>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -1,18 +1,19 @@
+/* global jQuery */
 /**
  * File navigation.js.
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
-	const mobileMenuButton = document.querySelector( 'button.mobile-menu' );
-	const navigation = document.querySelector( '.main-navigation' );
+( function( $ ) {
+	const mobileMenuButton = $( 'button.mobile-menu' );
+	const nav = $( '.main-navigation' );
 
 	function toggleNavigation( event ) {
 		event.preventDefault();
-		navigation.classList.toggle( 'show' );
-		mobileMenuButton.classList.toggle( 'close' );
+		nav.toggleClass( 'show' );
+		mobileMenuButton.toggleClass( 'close' );
 	}
 
-	mobileMenuButton.addEventListener( 'click', toggleNavigation );
-}() );
+	mobileMenuButton.on( 'click', toggleNavigation );
+}( jQuery ) );

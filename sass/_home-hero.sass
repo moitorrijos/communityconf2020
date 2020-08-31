@@ -12,6 +12,9 @@
   align-items: center
   font-size: 1.2rem
 
+  @media (max-width: $phone-size)
+    background-blend-mode: overlay
+
   &:after
     background-color: black
   
@@ -28,7 +31,7 @@
       color: $light-gray
 
     a
-      color: lighten($terciary-color, 15%)
+      color: $terciary-color
 
     h1
       font-weight: 600
@@ -40,11 +43,13 @@
     a.hero-button
       display: inline-block
       background-color: $light-gray
-      padding: 1.5rem 2rem
+      padding: 1rem 2rem
       text-decoration: none
       text-transform: uppercase
       font-weight: 600
-      margin: 1rem 0
+      margin: 2rem 0
+      color: darken($terciary-color, 10%)
+      border-radius: 8px
 
     grid-column: 1 / 3
 

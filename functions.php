@@ -197,6 +197,10 @@ function communityconf2020_scripts() {
 	wp_style_add_data( 'communityconf2020-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'communityconf2020-navigation', get_template_directory_uri() . '/js/navigation.js', array(), COMMCONF_VERSION, true );
+	
+	if ( is_page( 69 ) ) {
+		wp_enqueue_script( 'communityconf2020-agenda', get_template_directory_uri() . '/js/agenda.js', array(), COMMCONF_VERSION, true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -241,6 +245,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/inc/cpt/comunidades.php';
 
 /**
+ * CommunityConf Agenda
+ */
+require get_template_directory() . '/inc/agenda.php';
+
+/**
  * Editor Styles
  */
 add_theme_support( 'editor-styles' );
@@ -280,4 +289,5 @@ add_filter( 'enter_title_here', 'comconf_change_title_text' );
  */
 
 add_filter( 'wpcf7_load_js', '__return_false' );
+
 add_filter( 'wpcf7_load_css', '__return_false' );
