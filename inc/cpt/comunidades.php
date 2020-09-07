@@ -8,7 +8,7 @@ function Comunidades() {
 		'singular_name'         => _x( 'Comunidad', 'Post Type Singular Name', 'communityconf2020' ),
 		'menu_name'             => __( 'Comunidades', 'communityconf2020' ),
 		'name_admin_bar'        => __( 'Comunidades', 'communityconf2020' ),
-		'archives'              => __( 'Archivos', 'communityconf2020' ),
+		'archives'              => __( 'Comunidades', 'communityconf2020' ),
 		'attributes'            => __( 'Atributos', 'communityconf2020' ),
 		'parent_item_colon'     => __( 'Nombre de Padre', 'communityconf2020' ),
 		'all_items'             => __( 'Comunidades', 'communityconf2020' ),

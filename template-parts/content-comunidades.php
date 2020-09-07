@@ -1,52 +1,15 @@
+
 <?php
 
-  $args = array(
-    'post_type'       => 'comunidades',
-    'post_status'     => 'publish',
-    'posts_per_page'  => 10,
-    'order'           => 'ASC',
-  );
 
-  $comunidades = new WP_Query( $args );
 
-  if ( $comunidades->have_posts() ) :
+the_title('<h1>', '</h1>');
+
+the_post_thumbnail();
+
+acf_form(array(
+  'post_title' => true,
+  'updated_message' => __("Comunidad Actualizada", 'communityconf2020'),
+));
 
 ?>
-
-  <div class="comunidades">
-
-<?php
-
-  while ( $comunidades->have_posts() ) : $comunidades->the_post();
-  
-  $bio_de_comunidad = get_field('bio_de_comunidad');
-
-  $logo_de_comunidad = get_field('logo_de_comunidad');
-
-    ?>
-
-      <div class="comunidad">
-
-        <div class="comunidad-desc">
-
-          <h2><?php the_title(); ?></h2>
-
-          <p><?php echo $bio_de_comunidad; ?></p>
-
-        </div>
-
-        <figure class="comunidad-logo">
-
-          <?php the_post_thumbnail(); ?>
-
-        </figure>
-
-      </div>
-
-    <?php
-
-endwhile; ?>
-
-</div>
-
-<?php endif;

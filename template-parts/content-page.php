@@ -40,9 +40,9 @@
 				
 			} elseif ( get_the_ID() === 97 ) {
 				
-				get_template_part( 'template-parts/content', 'comunidades' );
+				get_template_part( 'template-parts/content', 'comunidades_locales' );
 
-			}
+			} 
 
 	?>
 

@@ -9,7 +9,7 @@
 
 if ( ! defined( 'COMMCONF_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'COMMCONF_VERSION', '1.1' );
+	define( 'COMMCONF_VERSION', '1.2' );
 }
 
 if ( ! function_exists( 'communityconf2020_setup' ) ) :
