@@ -32,3 +32,44 @@ form.wpcf7-form.init
     text-transform: uppercase
     -webkit-appearance: none
     -moz-appearance: none
+
+.acf-form-submit
+  padding: 15px 12px
+
+  input.acf-button.button.button-primary.button-large
+    -moz-appearance: none
+    -webkit-appearance: none
+    border: 0
+    padding: 0.75rem 1.5rem
+    background-color: lighten($primary-color, 10%)
+    color: $light-gray
+    font-family: $header-font-family
+    font-size: 1.1rem
+    border-radius: 8px
+
+form.password-protected
+  padding: 1rem 0.5rem
+
+  .inputs
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    max-width: 600px
+
+  input
+    padding: 1rem 0.5rem
+    border: 1px solid $light-gray
+    box-shadow: 0 1px 2px transparentize($dark-gray, 0.75)
+
+  input[type="password"]
+    display: block
+    width: 75%
+
+  input[type="submit"]
+    width: 25%
+    background-color: $primary-color
+    color: $light-gray
+    border: none
+
+    
+  

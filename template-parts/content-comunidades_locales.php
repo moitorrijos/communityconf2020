@@ -30,8 +30,8 @@
         <div class="comunidad-desc">
 
           <h2><?php the_title(); ?></h2>
-
-          <p><?php echo $bio_de_comunidad; ?></p>
+          
+          <?php echo $bio_de_comunidad; ?>
 
         </div>
 
