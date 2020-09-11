@@ -33,6 +33,10 @@
           
           <?php echo $bio_de_comunidad; ?>
 
+          <a href="<?php echo get_permalink(); ?>">
+            <?php echo __('Conocer más de esta comunidad'); ?>
+          </a>
+
         </div>
 
         <figure class="comunidad-logo">

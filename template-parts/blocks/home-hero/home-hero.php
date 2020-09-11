@@ -14,6 +14,8 @@ $home_hero_title = get_field('home_hero_title') ? : 'Una Experiencia Única Dond
 $home_hero_description = get_field('home_hero_description') ? : '18, 19 y 20 de septiembre de 2020';
 $home_hero_button_text = get_field('home_hero_button_text') ? : 'Regístrate Aquí';
 $home_hero_button_link = get_field('home_hero_button_link');
+$logo_patrocinador_1 = get_field('logo_patrocinador_1');
+$logo_patrocinador_2 = get_field('logo_patrocinador_2');
 
 ?>
 
@@ -27,10 +29,13 @@ $home_hero_button_link = get_field('home_hero_button_link');
       </a>
       <div class="patrocinador">
         <p>
-          Patrocinado por <a href="https://liveskill.io/">LiveSkill</a>
+          Patrocinado por
         </p>
         <figure>
-          <?php get_template_part('template-parts/liveskill_logo'); ?>
+          <img src="<?php echo $logo_patrocinador_1; ?>" alt="Logo LiveSkill">
+        </figure>
+        <figure>
+          <img src="<?php echo $logo_patrocinador_2; ?>" alt="Logo Global Internet Corp.">
         </figure>
       </div>
     </div>
