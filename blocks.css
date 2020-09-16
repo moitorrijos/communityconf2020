@@ -1,98 +1,66 @@
 .comconf-home-hero-inner-container {
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0 2rem;
-}
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem; }
 
 .comconf-home-hero {
-	padding: 6rem 0;
-	min-height: 90vh;
-	width: 100%;
-	background-color: #071d50;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	font-size: 1.2rem;
-}
-
-@media (max-width: 680px) {
-	.comconf-home-hero {
-		background-blend-mode: overlay;
-	}
-}
-
-.comconf-home-hero:after {
-	background-color: black;
-}
+  padding: 6rem 0;
+  min-height: 90vh;
+  width: 100%;
+  background-color: #071d50;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-size: 1.2rem; }
+  @media (max-width: 680px) {
+    .comconf-home-hero {
+      background-blend-mode: overlay; } }
+  .comconf-home-hero:after {
+    background-color: black; }
 
 .comconf-home-hero-inner-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	column-gap: 30px;
-}
-
-.comconf-home-hero-inner-container .comconf-home-hero-text {
-	align-self: center;
-	grid-column: 1 / 3;
-}
-
-.comconf-home-hero-inner-container .comconf-home-hero-text h1, .comconf-home-hero-inner-container .comconf-home-hero-text h2, .comconf-home-hero-inner-container .comconf-home-hero-text h3, .comconf-home-hero-inner-container .comconf-home-hero-text h4, .comconf-home-hero-inner-container .comconf-home-hero-text p {
-	color: #F2F2F2;
-}
-
-.comconf-home-hero-inner-container .comconf-home-hero-text a {
-	color: #CD4748;
-}
-
-.comconf-home-hero-inner-container .comconf-home-hero-text h1 {
-	font-weight: 600;
-	font-size: 2rem;
-	text-transform: uppercase;
-	text-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-	line-height: 1.1;
-}
-
-.comconf-home-hero-inner-container .comconf-home-hero-text a.hero-button {
-	display: inline-block;
-	background-color: #F2F2F2;
-	padding: 1rem 2rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 600;
-	margin: 2rem 0;
-	color: #b13031;
-	border-radius: 8px;
-}
-
-@media (max-width: 1000px) {
-	.comconf-home-hero-inner-container .comconf-home-hero-text {
-		grid-column: 1 / 4;
-	}
-}
-
-@media (max-width: 768px) {
-	.comconf-home-hero-inner-container .comconf-home-hero-text {
-		grid-column: 1 / 5;
-	}
-}
-
-.comconf-home-hero-inner-container .patrocinador {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-}
-
-.comconf-home-hero-inner-container .patrocinador figure {
-	width: 190px;
-	margin: 0.5rem 1rem;
-}
-
-.comconf-home-hero-inner-container .patrocinador figure svg {
-	width: 100%;
-}
-
-/*# sourceMappingURL=blocks.css.map */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px; }
+  .comconf-home-hero-inner-container .comconf-home-hero-text {
+    align-self: center;
+    grid-column: 1 / 3; }
+    .comconf-home-hero-inner-container .comconf-home-hero-text h1, .comconf-home-hero-inner-container .comconf-home-hero-text h2, .comconf-home-hero-inner-container .comconf-home-hero-text h3, .comconf-home-hero-inner-container .comconf-home-hero-text h4, .comconf-home-hero-inner-container .comconf-home-hero-text p {
+      color: #F2F2F2; }
+    .comconf-home-hero-inner-container .comconf-home-hero-text a {
+      color: #CD4748; }
+    .comconf-home-hero-inner-container .comconf-home-hero-text h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-shadow: 0 6px 12px rgba(0, 0, 0, .25);
+      line-height: 1.1; }
+    .comconf-home-hero-inner-container .comconf-home-hero-text a.hero-button {
+      display: inline-block;
+      background-color: #F2F2F2;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 2rem 0;
+      color: #b13031;
+      border-radius: 8px; }
+    @media (max-width: 1000px) {
+      .comconf-home-hero-inner-container .comconf-home-hero-text {
+        grid-column: 1 / 4; } }
+    @media (max-width: 768px) {
+      .comconf-home-hero-inner-container .comconf-home-hero-text {
+        grid-column: 1 / 5; } }
+  .comconf-home-hero-inner-container .patrocinador {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center; }
+    .comconf-home-hero-inner-container .patrocinador figure {
+      width: 190px;
+      margin: .5rem 1rem; }
+      .comconf-home-hero-inner-container .patrocinador figure svg {
+        width: 100%; }
