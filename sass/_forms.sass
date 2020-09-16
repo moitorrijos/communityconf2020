@@ -47,29 +47,37 @@ form.wpcf7-form.init
     font-size: 1.1rem
     border-radius: 8px
 
-form.password-protected
-  padding: 1rem 0.5rem
+form.acf-form.acf-form.acf-form
+  .acf-label
+    position: relative
+    overflow: visible
 
-  .inputs
-    display: flex
-    flex-flow: row wrap
-    align-items: center
-    max-width: 600px
+  p.description
+    position: absolute
+    top: 75px
+    left: 0
+    font-size: 0.9rem
+    line-height: 1.1
 
-  input
-    padding: 1rem 0.5rem
-    border: 1px solid $light-gray
-    box-shadow: 0 1px 2px transparentize($dark-gray, 0.75)
+  input, select
+    padding: 0.5rem
 
-  input[type="password"]
-    display: block
-    width: 75%
+  table.acf-table
+    th
+      font-size: 0.9rem
 
-  input[type="submit"]
-    width: 25%
-    background-color: $primary-color
-    color: $light-gray
-    border: none
+div#message p
+  background-color: $success-color
+  color: $light-gray
+  border: 2px solid darken($success-color, 10%)
+  padding: 1rem 2rem
+  line-height: 1.4
 
-    
-  
+.acf-field.acf-field.acf-field
+  padding: 1rem 0
+
+  &.parcial
+    padding-right: 20px
+
+.acf-form-submit.acf-form-submit.acf-form-submit
+  padding: 0

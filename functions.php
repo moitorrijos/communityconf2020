@@ -193,7 +193,7 @@ add_action( 'widgets_init', 'communityconf2020_widgets_init' );
  */
 function communityconf2020_scripts() {
 	wp_enqueue_style( 'communityconf2020-fonts', "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Saira:wght@400;600;800&display=swap", array(), '002', 'all' );
-	wp_enqueue_style( 'communityconf2020-style', get_stylesheet_uri(), array(), '07' );
+	wp_enqueue_style( 'communityconf2020-style', get_stylesheet_uri(), array(), '09' );
 	wp_style_add_data( 'communityconf2020-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'communityconf2020-navigation', get_template_directory_uri() . '/js/navigation.js', array(), COMMCONF_VERSION, true );
@@ -292,3 +292,68 @@ add_filter( 'enter_title_here', 'comconf_change_title_text' );
 add_filter( 'wpcf7_load_js', '__return_false' );
 
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+/**
+ * Edit Title in ACF Form
+ */
+
+function commconf_acf_prepare_field( $field ) {
+	
+	$field['label'] = "Nombre de la Comunidad";
+
+	return $field;
+	
+}
+add_filter('acf/prepare_field/name=_post_title', 'commconf_acf_prepare_field');
+
+/**
+ * Add image to featured image in communityconf front end form
+ */
+add_action('acf/save_post', 'my_acf_save_post');
+function my_acf_save_post( $post_id ) {
+
+  
+    // Get submitted .
+    $logo_de_comunidad = get_field('logo_de_comunidad');
+
+    // Check if a specific value was updated.
+    if( $logo_de_comunidad ) {
+				// Do something.
+				update_post_meta( $post_id, '_thumbnail_id', (int)$logo_de_comunidad );
+
+    }
+}
+
+
+
+/**
+ * Send Email when ACF Form is submitted
+ */
+
+add_action('acf/save_post', 'commconf_add_comm_post');
+
+function commconf_add_comm_post( $post_id ) {
+	
+	// bail early if not a contact_form post
+	if( get_post_type($post_id) !== 'comunidades' ) {
+		return;
+	}
+	
+	// bail early if editing in admin
+	if( is_admin() ) {
+		return;
+	}
+	
+	// vars
+	$post = get_post( $post_id );
+	
+	// email data
+	$to = 'juanmtorrijos@gmail.com';
+	$headers = 'From: Registro <registro@communityconf.com>' . "\r\n";
+	$subject = 'Nueva comunidad creada en CommunityConf2020';
+	$body = 'Verificar nueva comunidad creada en CommunityConf.com';
+	
+	// send email
+	wp_mail($to, $subject, $body, $headers );
+	
+}

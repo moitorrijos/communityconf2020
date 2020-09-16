@@ -5,6 +5,7 @@ $args = array(
   'post_status'     => 'publish',
   'posts_per_page'  => -1,
   'order'           => 'ASC',
+  
 );
 
 $comunidades = new WP_Query( $args );

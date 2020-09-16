@@ -290,6 +290,10 @@ h1.entry-title {
 	width: 70%;
 }
 
+.main-content main.site-main.add-community {
+	width: 90%;
+}
+
 @media (max-width: 1000px) {
 	.main-content main.site-main {
 		width: 100%;
@@ -617,33 +621,45 @@ form.wpcf7-form.init input.wpcf7-form-control.wpcf7-submit {
 	border-radius: 8px;
 }
 
-form.password-protected {
-	padding: 1rem 0.5rem;
+form.acf-form.acf-form.acf-form .acf-label {
+	position: relative;
+	overflow: visible;
 }
 
-form.password-protected .inputs {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	max-width: 600px;
+form.acf-form.acf-form.acf-form p.description {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	font-size: 0.9rem;
+	line-height: 1.1;
 }
 
-form.password-protected input {
-	padding: 1rem 0.5rem;
-	border: 1px solid #F2F2F2;
-	box-shadow: 0 1px 2px rgba(99, 99, 99, 0.25);
+form.acf-form.acf-form.acf-form input, form.acf-form.acf-form.acf-form select {
+	padding: 0.5rem;
 }
 
-form.password-protected input[type="password"] {
-	display: block;
-	width: 75%;
+form.acf-form.acf-form.acf-form table.acf-table th {
+	font-size: 0.9rem;
 }
 
-form.password-protected input[type="submit"] {
-	width: 25%;
-	background-color: #0D3696;
+div#message p {
+	background-color: #54BF2F;
 	color: #F2F2F2;
-	border: none;
+	border: 2px solid #429625;
+	padding: 1rem 2rem;
+	line-height: 1.4;
+}
+
+.acf-field.acf-field.acf-field {
+	padding: 1rem 0;
+}
+
+.acf-field.acf-field.acf-field.parcial {
+	padding-right: 20px;
+}
+
+.acf-form-submit.acf-form-submit.acf-form-submit {
+	padding: 0;
 }
 
 .widget {
