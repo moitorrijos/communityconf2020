@@ -52,7 +52,7 @@ img {
 	height: auto;
 }
 
-.main-content, .footer-widget-area {
+.comconf-home-hero .comconf-home-hero-inner-container, .home-page, .main-content, .footer-widget-area {
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 0 2rem;
@@ -73,6 +73,7 @@ p {
 
 a {
 	color: #045fba;
+	text-decoration: none;
 }
 
 ul, ol {
@@ -90,6 +91,7 @@ h1, h2, h3, h4 {
 	margin: 2rem 0;
 	font-weight: 800;
 	color: #636363;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -110,6 +112,30 @@ h4 {
 
 .logo-comunidad-single {
 	max-width: 300px;
+}
+
+.centered.centered {
+	text-align: center;
+}
+
+a.button {
+	font-family: Saira, sans-serif;
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	padding: 1rem 2rem;
+}
+
+a.button.secondary {
+	background-color: #CD4748;
+	color: #F2F2F2;
+}
+
+a.button.secondary:hover {
+	background-color: #b13031;
 }
 
 .site {
@@ -266,6 +292,229 @@ body.home header.site-header {
 		position: relative;
 		background-color: #0D3696;
 	}
+}
+
+.comconf-home-hero {
+	background-image: url(images/background-comconf-3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 6rem 0;
+	min-height: 90vh;
+	border-bottom: 1rem solid #CD4748;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	background-color: #045fba;
+}
+
+@media (max-width: 680px) {
+	.comconf-home-hero {
+		background-image: linear-gradient(#092567, #045fba);
+		min-height: 0;
+	}
+}
+
+.comconf-home-hero h1, .comconf-home-hero h2, .comconf-home-hero p {
+	color: #F2F2F2;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 30px;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-home-hero-text {
+	grid-column: 1 / 3;
+}
+
+@media (max-width: 1000px) {
+	.comconf-home-hero .comconf-home-hero-inner-container .comconf-home-hero-text {
+		grid-column: 1 / 4;
+	}
+}
+
+@media (max-width: 680px) {
+	.comconf-home-hero .comconf-home-hero-inner-container .comconf-home-hero-text {
+		grid-column: 1 / 5;
+	}
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-home-hero-text p {
+	font-size: 1.2rem;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-home-hero-text h1 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 2.2rem;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-description {
+	margin-bottom: 3rem;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	column-gap: 40px;
+	justify-content: start;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-description .comconf-desc {
+	text-align: center;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-description .comconf-desc h2 {
+	margin: 0.5rem 0;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-description .comconf-desc p {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-buttons a {
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-buttons a.hero-button-primary {
+	background-color: #F2F2F2;
+	color: #045fba;
+	margin: 0 20px 20px 0;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-buttons a.hero-button-primary:hover {
+	background-color: #d9d9d9;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-buttons a.hero-button-secondary {
+	background-color: #CD4748;
+	color: #F2F2F2;
+}
+
+.comconf-home-hero .comconf-home-hero-inner-container .comconf-buttons a.hero-button-secondary:hover {
+	background-color: #b13031;
+}
+
+.home-page {
+	margin: 3rem auto;
+}
+
+.home-page h3 {
+	margin: 1rem 0;
+}
+
+.nuestros-socios {
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+@media (max-width: 1000px) {
+	.nuestros-socios {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 680px) {
+	.nuestros-socios {
+		grid-template-columns: 1fr;
+	}
+}
+
+.nuestros-socios .socio {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nuestros-socios .socio p {
+	text-align: center;
+	font-size: 0.8rem;
+	margin: 0.5rem;
+}
+
+.nuestros-socios .socio svg {
+	width: 100%;
+	max-height: 70px;
+}
+
+.home-page-comunidades {
+	margin: 4rem 0;
+	display: grid;
+	column-gap: 20px;
+	row-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 680px) {
+	.home-page-comunidades {
+		grid-template-columns: 1fr;
+	}
+}
+
+.home-page-comunidades .home-page-comunidades-image {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+@media (max-width: 680px) {
+	.home-page-comunidades .home-page-comunidades-image {
+		display: none;
+	}
+}
+
+.home-page-comunidades .home-page-comunidades-image figure {
+	max-width: 200px;
+	height: 100px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+}
+
+.home-page-comunidades .home-page-comunidades-image figure img {
+	object-fit: contain;
+}
+
+.home-page-speakers {
+	margin: 3rem 0 5rem;
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 680px) {
+	.home-page-speakers {
+		grid-template-columns: 1fr;
+	}
+}
+
+.home-page-speakers .home-page-speakers-gravatars {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes {
+	width: calc(100% / 6);
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes img {
+	border: 4px solid white;
+	box-shadow: 0 4px 8px rgba(99, 99, 99, 0.2);
+	transform: scale(1.2);
+	border-radius: 50%;
 }
 
 h1.entry-title {
@@ -747,13 +996,25 @@ footer.site-footer .site-info a:hover {
 	padding-left: 0;
 }
 
+.footer-widget-area ul li {
+	padding: 0;
+}
+
+.footer-widget-area ul li a {
+	padding: 1rem 0;
+}
+
+.footer-widget-area ul li a img {
+	max-width: 200px;
+}
+
 .footer-widget-area img, .footer-widget-area svg {
 	width: 100%;
 }
 
 .footer-widget-area h2 {
 	color: #F2F2F2;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .footer-widget-area a {

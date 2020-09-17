@@ -194,8 +194,6 @@ add_action( 'widgets_init', 'communityconf2020_widgets_init' );
 function communityconf2020_scripts() {
 	wp_enqueue_style( 'communityconf2020-fonts', "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Saira:wght@400;600;800&display=swap", array(), '002', 'all' );
 	wp_enqueue_style( 'communityconf2020-style', get_stylesheet_uri(), array(), COMMCONF_VERSION );
-	wp_style_add_data( 'communityconf2020-style', 'rtl', 'replace' );
-
 	wp_enqueue_script( 'communityconf2020-navigation', get_template_directory_uri() . '/js/navigation.js', array(), COMMCONF_VERSION, true );
 	
 	if ( is_page( 69 ) ) {
