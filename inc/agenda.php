@@ -1,6 +1,6 @@
 <?php
 
-function get_agenda_tabs( $dia, $mes_largo, $mes_corto, $dia_dia ) {
+function get_agenda_tabs( $dia, $dia_largo, $dia_corto, $mes_largo, $mes_corto, $dia_dia ) {
 
 	if ( have_rows( $dia ) ) : ?>
 
@@ -14,14 +14,22 @@ function get_agenda_tabs( $dia, $mes_largo, $mes_corto, $dia_dia ) {
 
 			 <h3>
         <span class="long-month">
+          <?php the_sub_field($dia_largo); ?>
+        </span>
+        <span class="short-month">
+          <?php the_sub_field($dia_corto); ?>
+        </span>
+      </h3>
+
+			 <h4 class="numero-dia"><?php the_sub_field($dia_dia); ?></h4>
+       <h4 class="nombre-mes">
+        <span class="long-month">
           <?php the_sub_field($mes_largo); ?>
         </span>
         <span class="short-month">
           <?php the_sub_field($mes_corto); ?>
         </span>
-      </h3>
-
-			 <h4><?php the_sub_field($dia_dia); ?></h4>
+      </h4>
 
 		 <?php endwhile; ?>
 

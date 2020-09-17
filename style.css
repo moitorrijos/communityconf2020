@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: Juan Moises Torrijos
 Author URI: https://moitorrijos.com
 Description: Tema personalizado de la CommunityConf 2020 Panamá
-Version: 1.6
+Version: 1.9
 Tested up to: 5.5
 Requires PHP: 5.7
 License: GNU General Public License v2 or later
@@ -99,11 +99,11 @@ h1 {
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 h4 {
@@ -705,36 +705,51 @@ figure.comunidad-logo {
 }
 
 .lenguetas button.lengueta h3, .lenguetas button.lengueta h4 {
-	padding: 1rem 2rem;
+	padding: 0.5rem 2rem;
 	margin: 0;
 	color: #7d7d7d;
+	font-size: 1rem;
+}
+
+.lenguetas button.lengueta h3 span.long-month, .lenguetas button.lengueta h4 span.long-month {
+	display: block;
+}
+
+@media (max-width: 680px) {
+	.lenguetas button.lengueta h3 span.long-month, .lenguetas button.lengueta h4 span.long-month {
+		display: none;
+	}
+}
+
+.lenguetas button.lengueta h3 span.short-month, .lenguetas button.lengueta h4 span.short-month {
+	display: none;
+}
+
+@media (max-width: 680px) {
+	.lenguetas button.lengueta h3 span.short-month, .lenguetas button.lengueta h4 span.short-month {
+		display: block;
+		font-size: 1.2rem;
+	}
 }
 
 .lenguetas button.lengueta h3 {
+	font-size: 1.2;
 	background-color: #c13435;
 	color: white;
 	color: #e5e5e5;
 }
 
-.lenguetas button.lengueta h3 span.long-month {
-	display: block;
+.lenguetas button.lengueta h4 {
+	padding: 0;
 }
 
-@media (max-width: 680px) {
-	.lenguetas button.lengueta h3 span.long-month {
-		display: none;
-	}
+.lenguetas button.lengueta h4.numero-dia {
+	font-size: 1.4rem;
+	padding-top: 0.5rem;
 }
 
-.lenguetas button.lengueta h3 span.short-month {
-	display: none;
-}
-
-@media (max-width: 680px) {
-	.lenguetas button.lengueta h3 span.short-month {
-		display: block;
-		font-size: 1.2rem;
-	}
+.lenguetas button.lengueta h4.nombre-mes {
+	padding-bottom: 0.5rem;
 }
 
 .lenguetas button.lengueta.lengueta-activa {
@@ -747,7 +762,7 @@ figure.comunidad-logo {
 }
 
 .lenguetas button.lengueta.lengueta-activa h4 {
-	color: #636363;
+	color: #0D3696;
 }
 
 .agenda {

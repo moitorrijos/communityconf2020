@@ -14,11 +14,32 @@ if ( $lenguetas ) :
 
           while ( have_rows( 'lenguetas' ) ) : the_row();
         
-            get_agenda_tabs('dia_1', 'mes_largo_dia_1', 'mes_corto_dia_1', 'dia_dia_1');
+            get_agenda_tabs(
+              'dia_1',
+              'nombre_largo_de_dia_1',
+              'nombre_corto_de_dia_1',
+              'mes_largo_dia_1',
+              'mes_corto_dia_1',
+              'dia_dia_1'
+            );
 
-            get_agenda_tabs('dia_2', 'mes_largo_dia_2', 'mes_corto_dia_2', 'dia_dia_2');
+            get_agenda_tabs(
+              'dia_2',
+              'nombre_largo_de_dia_2',
+              'nombre_corto_de_dia_2',
+              'mes_largo_dia_2',
+               'mes_corto_dia_2',
+               'dia_dia_2'
+            );
 
-            get_agenda_tabs('dia_3', 'mes_largo_dia_3', 'mes_corto_dia_3', 'dia_dia_3');
+            get_agenda_tabs(
+              'dia_3',
+              'nombre_largo_de_dia_3',
+              'nombre_corto_de_dia_3',
+              'mes_largo_dia_3',
+              'mes_corto_dia_3',
+              'dia_dia_3'
+            );
           
           endwhile; endif;
           
