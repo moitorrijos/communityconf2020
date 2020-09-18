@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: Juan Moises Torrijos
 Author URI: https://moitorrijos.com
 Description: Tema personalizado de la CommunityConf 2020 Panamá
-Version: 1.10
+Version: 1.11
 Tested up to: 5.5
 Requires PHP: 5.7
 License: GNU General Public License v2 or later
@@ -410,7 +410,7 @@ body.home header.site-header {
 
 .nuestros-socios {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 2rem auto;
 	display: grid;
 	justify-content: space-between;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -484,7 +484,7 @@ body.home header.site-header {
 }
 
 .home-page-comunidades .home-page-comunidades-image figure img {
-	object-fit: contain;
+	width: 90%;
 }
 
 .home-page-speakers {
@@ -643,6 +643,11 @@ figure.comunidad-logo {
 	row-gap: 40px;
 }
 
+.ponentes h2 {
+	text-align: center;
+	line-height: 1;
+}
+
 .ponentes .ponente {
 	margin: 2rem 0 1rem;
 	display: grid;
@@ -659,8 +664,12 @@ figure.comunidad-logo {
 	position: relative;
 }
 
+.ponentes .avatars-ponentes .avatar-nombre-redes:first-child {
+	z-index: 2;
+}
+
 .ponentes .avatars-ponentes .avatar-nombre-redes:last-child {
-	z-index: -1;
+	z-index: 1;
 }
 
 .ponentes .avatars-ponentes .avatar-nombre-redes .avatar-nombre {
@@ -676,7 +685,7 @@ figure.comunidad-logo {
 	border: 4px solid #F2F2F2;
 	box-shadow: 0 4px 8px rgba(99, 99, 99, 0.25);
 	transform: scale(1.5);
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	width: 100px;
 	height: 100px;
 }
@@ -686,17 +695,19 @@ figure.comunidad-logo {
 	line-height: 1.1;
 	font-weight: 600;
 	padding: 0 10px;
+	text-align: center;
 }
 
 .ponentes .avatars-ponentes .avatar-nombre-redes .redes {
 	padding: 0 4px;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .ponentes .avatars-ponentes .avatar-nombre-redes .redes a {
 	display: block;
-	margin-right: 4px;
+	padding: 0 4px;
 	text-decoration: none;
 }
 
