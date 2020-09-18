@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: Juan Moises Torrijos
 Author URI: https://moitorrijos.com
 Description: Tema personalizado de la CommunityConf 2020 Panamá
-Version: 1.9
+Version: 1.10
 Tested up to: 5.5
 Requires PHP: 5.7
 License: GNU General Public License v2 or later
@@ -504,6 +504,7 @@ body.home header.site-header {
 .home-page-speakers .home-page-speakers-gravatars {
 	display: flex;
 	flex-flow: row wrap;
+	position: relative;
 }
 
 .home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes {
@@ -512,9 +513,29 @@ body.home header.site-header {
 
 .home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes img {
 	border: 4px solid white;
-	box-shadow: 0 4px 8px rgba(99, 99, 99, 0.2);
+	box-shadow: 0 6px 12px rgba(99, 99, 99, 0.25);
 	transform: scale(1.2);
 	border-radius: 50%;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes:nth-child(1) {
+	z-index: 5;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes:nth-child(2) {
+	z-index: 4;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes:nth-child(3) {
+	z-index: 3;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes:nth-child(4) {
+	z-index: 2;
+}
+
+.home-page-speakers .home-page-speakers-gravatars figure.gravatar-ponentes:nth-child(5) {
+	z-index: 1;
 }
 
 h1.entry-title {
